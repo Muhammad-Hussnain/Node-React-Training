@@ -1,0 +1,21 @@
+<html>
+<body>
+<h1> To Do Tasks </h1>
+<ul>
+    <% data.forEach(function(item){%>
+      <li>  <%= item["task"] %> </li>
+
+
+    <%});%>
+</ul>
+
+<h1> Create a new task </h1>
+<form action="http://127.0.0.1:8081/details" method="POST">
+New Task: <input type="text" name="new_task">  <br> <br>
+
+<input type="submit" value="Submit">
+</form>  
+
+
+</body>
+</html>
